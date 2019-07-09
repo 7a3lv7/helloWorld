@@ -1,4 +1,4 @@
-FROM microsoft/iis
+FROM microsoft/iis:windowsservercore-ltsc2016
 
 # install ASP.NET 4.5
 RUN dism /online /enable-feature /all /featurename:IIS-ASPNET45 /NoRestart
